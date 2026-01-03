@@ -14,7 +14,7 @@ int main() {
         cout << "1. Tambah data panen di awal list\n";
         cout << "2. Tampilkan semua data\n";
         cout << "3. Cari panen terbanyak\n";
-        cout << "4. Tampilkan panen berdasarkan bulan\n";
+        cout << "4. Tampilkan Tanaman yang panen berdasarkan bulan\n";
         cout << "0. Keluar\n";
         cout << "Pilih: ";
         cin >> pilihan;
