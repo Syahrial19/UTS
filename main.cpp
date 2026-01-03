@@ -40,7 +40,7 @@ int main() {
 
         case 3: {
             address max = panenTerbanyak(L);
-            if (max != NULL) {
+            if (max != nullptr) {
                 cout << "Panen terbanyak:\n";
                 cout << max->info.namaTanaman << " | "
                      << max->info.bulan << " | "
