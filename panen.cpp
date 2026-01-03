@@ -2,13 +2,13 @@
 #include <iostream>
 
 void createList(List &L) {
-    L.first = NULL;
+    L.first = nullptr;
 }
 
 address createNewElm(Panen x) {
     address p = new ElmList;
     p->info = x;
-    p->next = NULL;
+    p->next = nullptr;
     return p;
 }
 
@@ -19,12 +19,13 @@ void tambahData(List &L, Panen x) {
 }
 
 address panenTerbanyak(List L) {
-    if (L.first == NULL) return NULL;
+    if (L.first == nullptr)
+        return nullptr;
 
     address max = L.first;
     address p = L.first->next;
 
-    while (p != NULL) {
+    while (p != nullptr) {
         if (p->info.jumlah > max->info.jumlah) {
             max = p;
         }
@@ -37,7 +38,7 @@ void panenBulanan(List L, string bulanCari) {
     address p = L.first;
     bool ketemu = false;
 
-    while (p != NULL) {
+    while (p != nullptr) {
         if (p->info.bulan == bulanCari) {
             cout << p->info.namaTanaman << " ";
             ketemu = true;
@@ -55,12 +56,12 @@ void tampilkanList(List L) {
     address p = L.first;
     int i = 1;
 
-    if (p == NULL) {
+    if (p == nullptr) {
         cout << "List kosong\n";
         return;
     }
 
-    while (p != NULL) {
+    while (p != nullptr) {
         cout << i++ << ". "
              << p->info.namaTanaman << " | "
              << p->info.bulan << " | "
